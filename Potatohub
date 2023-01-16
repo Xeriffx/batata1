@@ -1,0 +1,25 @@
+biblioteca local = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+
+local Window = Library.CreateLib("potatomenu hub alpha!", "DarkTheme")
+
+-- A PRINCIPAL
+
+local Main = Window:NewTab("Uma porta para as coisas")
+
+local MainSection = Main:NewSection("Aqui!")
+
+MainSection:NewButton("HardcoreModeScript", "suas portas tornam mais difícil!", function()
+
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Xeriffx/hardcoremode/main/Script%20hardcore"))()
+
+fim)
+
+MainSection:NewButton("SpawnSeek", "Procure, não mate seu amigo", function()
+
+    local EntitySpawner = loadstring(game:HttpGet("https://raw.githubusercontent.com/dreadmania/Scripts/main/EntitySpawner.lua"))()
+
+configuração local = {}
+
+EntitySpawner:Spawn("Procurar", descompactar(Configuração))
+
+fim)
