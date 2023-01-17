@@ -23,3 +23,29 @@ local Configuration = {}
 EntitySpawner:Spawn("Seek", unpack(Configuration))
 
 end)
+
+MainSection:NewButton("other hub", "this hub no makes on me", function()
+
+    loadstring(game:HttpGet"https://raw.githubusercontent.com/sponguss/Doors-Entity-Replicator/main/source.lua")()
+
+end)
+
+-- MAIN
+
+local Main = Window:NewTab("all games function")
+
+local MainSection = Main:NewSection("here!")
+
+Section:NewToggle("Speed", "speed you!", function(state)
+
+    if state then
+
+        game.Players.LocalPlayers.Character.Humanoid.WalkSpeed = 120
+
+    else
+
+        game.Players.LocalPlayers.Character.Humanoid.WalkSpeed = 16
+
+    end
+
+end)
