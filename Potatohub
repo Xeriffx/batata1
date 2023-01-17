@@ -82,6 +82,23 @@ end)
 
 MainSection:NewKeybind("ui keybind", "hahah", Enum.KeyCode.M, function()
 
-	Library:ToggleUI()
+	Library:ToggleUI()end)
+
+-- LOCAL PLAYER
+
+local Player = Window:NewTab("Others")
+
+local PlayerSection = Player:NewSection("Player")
+
+Section:NewSlider("WalkSpeed", "Speed!!", 500, 0, function(s) -- 500 (MaxValue) | 16 (MinValue)
+
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
 
 end)
+
+Section:NewSlider("JumpPower", "Jump!!!!", 500, 0, function(s) -- 500 (MaxValue) | 50 (MinValue)
+
+    game.Players.LocalPlayer.Character.Humanoid.JumpPower = s
+
+end)
+
