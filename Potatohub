@@ -36,7 +36,7 @@ local Main = Window:NewTab("all games function")
 
 local MainSection = Main:NewSection("here!")
 
-Section:NewToggle("Speed", "speed you!", function(state)
+MainSection:NewToggle("Speed", "speed you!", function(state)
 
     if state then
 
