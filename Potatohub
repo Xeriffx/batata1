@@ -79,3 +79,9 @@ MainSection:NewButton("Pedulum Hub", "one thing", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Tescalus/Pendulum-Hubs-Source/main/Pendulum%20Hub%20V5.lua"))()
 
 end)
+
+MainSection:NewKeybind("ui keybind", "hahah", Enum.KeyCode.M, function()
+
+	Library:ToggleUI()
+
+end)
