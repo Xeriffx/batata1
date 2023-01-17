@@ -115,4 +115,16 @@ PlayerSection:NewSlider("JumpPower", "Jump!!!!", 500, 0, function(s) -- 500 (Max
     game.Players.LocalPlayer.Character.Humanoid.JumpPower = s
 
 end) 
- 
+
+-- MAIN
+
+local Main = Window:NewTab("Blox Fruit")
+
+local MainSection = Main:NewSection("hehe")
+
+MainSection:NewButton("hohohub", "hehe", function()
+
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/HOHO_H/main/Loading_UI'))()
+
+end)
+
