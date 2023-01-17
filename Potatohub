@@ -14,6 +14,14 @@ MainSection:NewButton("HardcoreModeScript", "you doors make more difficulty!", f
 
 end)
 
+MainSection:NewButton("skeletonkey", "mobile & pc", function()
+
+    loadstring(game:HttpGet("https://pastebin.com/raw/YSj8WCwS"))()
+
+end)
+
+    
+
 MainSection:NewButton("SpawnSeek", "Seek don't kill he's friend", function()
 
     local EntitySpawner = loadstring(game:HttpGet("https://raw.githubusercontent.com/dreadmania/Scripts/main/EntitySpawner.lua"))()
@@ -88,9 +96,7 @@ end)
 
 MainSection:NewKeybind("ui keybind", "hahah", Enum.KeyCode.M, function()
 
-	Library:ToggleUI()
-
-end)
+	Library:ToggleUI()end)
 
 -- LOCAL PLAYER
 
@@ -108,16 +114,5 @@ PlayerSection:NewSlider("JumpPower", "Jump!!!!", 500, 0, function(s) -- 500 (Max
 
     game.Players.LocalPlayer.Character.Humanoid.JumpPower = s
 
-end)
-
-                        
-
-	
-
-	
-
-
-		
-
-    
-
+end) 
+ 
