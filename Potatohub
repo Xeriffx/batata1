@@ -90,13 +90,13 @@ local Player = Window:NewTab("Others")
 
 local PlayerSection = Player:NewSection("Player")
 
-Section:NewSlider("WalkSpeed", "Speed!!", 500, 0, function(s) -- 500 (MaxValue) | 16 (MinValue)
+PlayerSection:NewSlider("WalkSpeed", "Speed!!", 500, 0, function(s) -- 500 (MaxValue) | 16 (MinValue)
 
     game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
 
 end)
 
-Section:NewSlider("JumpPower", "Jump!!!!", 500, 0, function(s) -- 500 (MaxValue) | 50 (MinValue)
+PlayerSection:NewSlider("JumpPower", "Jump!!!!", 500, 0, function(s) -- 500 (MaxValue) | 50 (MinValue)
 
     game.Players.LocalPlayer.Character.Humanoid.JumpPower = s
 
