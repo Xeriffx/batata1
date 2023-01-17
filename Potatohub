@@ -36,7 +36,7 @@ local Main = Window:NewTab("all games function")
 
 local MainSection = Main:NewSection("here!")
 
-Section:NewToggle("Speed", "speed you!", function(state)
+MainSection:NewToggle("Speed", "speed you!", function(state)
 
     if state then
 
@@ -50,7 +50,7 @@ Section:NewToggle("Speed", "speed you!", function(state)
 
 end)
 
-Section:NewButton("mobile keyboard", "hmm", function()
+MainSection:NewButton("mobile keyboard", "hmm", function()
 
     loadstring(game:HttpGet("https://raw.githubusercontent.com/advxzivhsjjdhxhsidifvsh/mobkeyboard/main/main.txt", true))()
 
@@ -74,7 +74,7 @@ local Main = Window:NewTab("extras")
 
 local MainSection = Main:NewSection("R6")
 
-Section:NewButton("Pedulum Hub", "one thing", function()
+MainSection:NewButton("Pedulum Hub", "one thing", function()
 
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Tescalus/Pendulum-Hubs-Source/main/Pendulum%20Hub%20V5.lua"))()
 
