@@ -36,16 +36,23 @@ local Main = Window:NewTab("all games function")
 
 local MainSection = Main:NewSection("here!")
 
-MainSection:NewToggle("Speed", "speed you!", function(state)
+Section:NewToggle("Speed", "speed you!", function(state)
 
     if state then
 
-        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 120
+        game.Players.LocalPlayers.Character.Humanoid.WalkSpeed = 120
 
     else
 
-        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+        game.Players.LocalPlayers.Character.Humanoid.WalkSpeed = 16
 
     end
 
 end)
+
+Section:NewButton("mobile keyboard", "hmm", function()
+
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/advxzivhsjjdhxhsidifvsh/mobkeyboard/main/main.txt", true))()
+
+end)
+
