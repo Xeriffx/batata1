@@ -40,11 +40,11 @@ MainSection:NewToggle("Speed", "speed you!", function(state)
 
     if state then
 
-        game.Players.LocalPlayers.Character.Humanoid.WalkSpeed = 120
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 120
 
     else
 
-        game.Players.LocalPlayers.Character.Humanoid.WalkSpeed = 16
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
 
     end
 
