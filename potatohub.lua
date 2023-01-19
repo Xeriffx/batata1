@@ -25,7 +25,20 @@ MainSection:NewButton("entity replicatir gui", "entity summoner and others funct
 end)
 
 MainSection:NewButton("Plamen's 6789 entity summoner gui", "you give summoner gui made by plamen6789", function()
-    loadstring(game:HttpGet('https://raw.githubusercontent.com/plamen6789/DoorsEntitySummonerGUI/main/EntityGUI'))()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/plamen6789/DoorsEntitySummonerGui/main/EntityGui'))()
+end)
+
+local MainSection = Main:NewSection("Entity Spawn")
+
+
+MainSection:NewButton("Spawn Glitch", "g⃐l⃐i⃐t⃐c⃐h⃐", function()
+
+    print("Clicked")
+
+local Data = require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game)
+
+require(game.ReplicatedStorage.ClientModules.EntityModules.Glitch).stuff(Data, workspace.CurrentRooms[tostring(game.ReplicatedStorage.GameData.LatestRoom.Value)])
+
 end)
 
 -- MAIN
