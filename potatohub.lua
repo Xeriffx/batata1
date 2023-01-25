@@ -200,7 +200,7 @@ end)
 
 --MAIN
 local Main = Window:NewTab("Brookhaven")
-local MainSection = Tab:NewSection("hehe!")
+local MainSection = Main:NewSection("hehe!")
 
 MainSection:NewButton("Brookhaven Ice Hub", "Key: NewIceHub", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/IceMael7/NewIceHub/main/Brookhaven"))()
